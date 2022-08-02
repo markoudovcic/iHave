@@ -250,7 +250,7 @@
     transform: scale(2);
     margin-left: 130px;
   }
-  .productDescription .actionButtons div {
+  .actionButtons div {
     border-radius: 8px;
     width: 360px;
     height: 90px;
@@ -271,7 +271,7 @@
   }
 }
 #specs {
-  background-image: url(../img/Mask\ Group\ 7@2x.png);
+  background: url(../img/Mask\ Group\ 7@2x.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@
   display: flex;
   flex-direction: column;
   width: 606px;
-  margin-top: 296px;
+  justify-content: center;
 }
 .specsDescription div {
   display: flex;
@@ -316,8 +316,25 @@
   text-align: justify;
 }
 
+@media screen and (max-width: 767px) {
+  #specs {
+    background: #3cbbd3;
+    justify-content: center;
+  }
+  .specsDescription {
+    align-items: center;
+    width: 100%;
+  }
+  .specsDescription div h1 {
+    padding: 0 30px;
+    font-size: 60px;
+  }
+  .specsDescription p {
+    font-size: 28px;
+  }
+}
 #motivation {
-  background-image: url(../img/Mask\ Group\ 13@2x.png);
+  background: url(../img/Mask\ Group\ 13@2x.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -341,6 +358,38 @@
   margin: 40px 0;
 }
 
+.motImage {
+  display: none;
+  width: 100%;
+  background: url("..img/Mask Group 13@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #motivation {
+    background: #e4e4d0;
+  }
+  .motContainer {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+  .motContainer h1 {
+    font-size: 60;
+  }
+  .motContainer p {
+    font-size: 28;
+  }
+  img {
+    display: block;
+  }
+}
 #products {
   background-color: var(--secondary-color);
   display: flex;
@@ -571,7 +620,7 @@ footer p {
 
 @media screen and (min-width: 767px) {
   .container {
-    width: 760px;
+    width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {
