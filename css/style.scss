@@ -30,12 +30,16 @@
 
 @media screen and (min-width: 767px) {
     .container {
-        width: 767px;
+        width: 760px;
     }
 
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 962px;
+    }
+}
 
 @media screen and(min-width: 1200px) {
     .container {
@@ -45,12 +49,12 @@
 
 @media screen and(min-width: 1366px) {
     .container {
-        width: 1080px;
+        width: 1330px;
     }
 }
 
 @media screen and (min-width: 1920px) {
     .container {
-        width: 1636px;
+        width: 1366px;
     }
 }
