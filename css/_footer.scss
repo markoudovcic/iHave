@@ -1,0 +1,84 @@
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: flex-start;
+    padding-top: 132px !important;
+    padding-bottom: 128px !important;
+
+    h1 {
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--paragraph-color);
+        padding: 16px 0;
+    }
+
+    p {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--paragraph-color);
+        padding-bottom: 16px;
+    }
+
+}
+
+.footerColumn:nth-child(1) {
+    margin-right: 300px;
+}
+
+.footerColumn:nth-child(2) {
+    margin-right: 128px;
+}
+
+.footerColumn:nth-child(3) {
+    margin-right: 165px;
+}
+
+.footerColumn:nth-child(4) {
+    margin-right: auto;
+}
+
+#callUs {
+    display: flex;
+    padding-top: 16px;
+}
+
+.footerContact {
+
+    h2 {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: var(--paragraph-color);
+    }
+
+    h2:nth-child(2) {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+}
+
+#footerSocial {
+    padding-bottom: 44px;
+}
+
+.socialIcons {
+    width: 24px;
+}
+
+#footerLogo {
+    width: 120px;
+}
+
+#copyright {
+    background-color: var(--primary-color);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: var(--paragraph-color);
+    height: 102px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

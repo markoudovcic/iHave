@@ -1,0 +1,53 @@
+#specs {
+    background-image: url(../img/Mask\ Group\ 7@2x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 885px;
+    display: flex;
+
+}
+
+.specsDescription {
+    display: flex;
+    flex-direction: column;
+    width: 606px;
+    margin-top: 296px;
+
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        font-family: Oswald, sans-serif;
+
+
+        h1 {
+            padding: 0 30px;
+            font-size: 24px;
+        }
+    }
+
+    #line {
+        width: 100%;
+        background-color: var(--paragraph-color);
+        height: 1px;
+        position: relative;
+        margin-top: 20px;
+
+        div {
+            height: 5px;
+            width: 20%;
+            top: -2.5px;
+            position: absolute;
+            background-color: var(--accent-color);
+        }
+    }
+
+    p {
+        color: var(--paragraph-color);
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        margin-top: 40px;
+        text-align: justify;
+    }
+}

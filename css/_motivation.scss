@@ -1,0 +1,81 @@
+#motivation {
+    background-image: url(../img/Mask\ Group\ 13@2x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 920px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .motContainer {
+        width: 578px;
+        margin-right: 184px;
+        margin-top: 249px;
+    }
+
+    h1 {
+        font-family: Oswald, sans-serif;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: Roboto, sans-serif;
+        color: var(--paragraph-color);
+        font-size: 18px;
+        margin: 40px 0;
+    }
+}
+
+#products {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 128px;
+    padding-bottom: 110px;
+
+    h1 {
+        font-family: Oswald, sans-serif;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        width: 30%;
+        text-align: center;
+        color: var(--paragraph-color);
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .productCards {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        img {
+            width: 350px;
+        }
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+
+    .productTitle {
+        font-family: Oswald, sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .productPrice {
+        font-family: Oswald, sans-serif;
+        font-size: 50px;
+        color: var(--accent-color);
+        font-weight: 200;
+    }
+}

@@ -1,0 +1,56 @@
+@use "homewrapper";
+@use "specs";
+@use "motivation";
+@use "products";
+@use "inputform";
+@use "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --accent-color: #FF9300;
+    --primary-color: #DFE3EB;
+    --secondary-color: #EBEFF7;
+    --paragraph-color: #656565;
+    --heading-color: #231F20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 142px;
+    padding-right: 142px;
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        width: 760px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media screen and(min-width: 1366px) {
+    .container {
+        width: 1080px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1636px;
+    }
+}
