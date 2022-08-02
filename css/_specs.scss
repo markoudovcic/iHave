@@ -14,15 +14,16 @@
     justify-content: center;
 
 
-    div {
+    .specsHeading {
+        width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        font-family: Oswald, sans-serif;
 
-
-        h1 {
-            padding: 0 30px;
-            font-size: 24px;
+        .specsText {
+            font-family: Oswald, sans-serif;
+            font-weight: 500;
+            font-size: 28px;
         }
     }
 
@@ -77,4 +78,19 @@
         }
     }
 
+}
+
+@media screen and (min-width: 480px) {
+
+    #specs {
+        background: #5daed9;
+    }
+
+    .specsDescription {
+        div {
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
 }

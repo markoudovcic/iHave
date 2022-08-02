@@ -24,30 +24,3 @@
         margin: 40px 0;
     }
 }
-
-
-@media screen and (max-width: 767px) {
-    #motivation {
-        background: #e4e4d0;
-    }
-
-    .motContainer {
-
-        width: 100% !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0 !important;
-        margin-top: 0 !important;
-
-        h1 {
-            font-size: 60;
-        }
-
-        p {
-            font-size: 28;
-        }
-    }
-
-}

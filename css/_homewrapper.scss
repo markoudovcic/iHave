@@ -1,10 +1,11 @@
 #homeWrapper {
-    height: 918px;
+    padding: 50px 0;
     background: linear-gradient(to right,
             #DFE3EB 0%,
             #DFE3EB 27%,
             #EBEFF7 27%,
-            #EBEFF7 100%);
+            #EBEFF7 100%,
+        );
 }
 
 .mobileThumbnail {
@@ -16,7 +17,6 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding-top: 38px;
     padding-bottom: 82px;
 
     .logo {
@@ -53,6 +53,7 @@
 #heroArea {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 15px;
 }
 
@@ -205,7 +206,7 @@
     flex-direction: column;
 
     img {
-        padding: 7px 0;
+        margin: 15px;
         width: 40px;
         height: 40px;
     }
@@ -215,125 +216,74 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
+
     #homeWrapper {
-        height: 2640px;
-        width: 767px;
         background: linear-gradient(to right,
                 #EBEFF7 0%,
                 #EBEFF7 100%);
     }
 
-    #navBar {
-        height: 100px;
+    #heroArea {
+        justify-content: center;
 
-        .logo {
-            width: 300px;
-        }
+    }
+
+    .logo {
+        width: 240px;
     }
 
     .navButtons {
         img {
-            width: 40px;
-            margin: 15px;
+            width: 30px;
         }
-
-        img:hover {
-            cursor: pointer;
-        }
-    }
-
-    .mobileHeroImage {
-        display: block;
-    }
-
-    .mobileThumbnail {
-        display: flex;
-        margin-bottom: 50px;
-
-        img {
-            width: 175px;
-            margin: 0 30px;
-        }
-    }
-
-    .presentImage {
-        img {
-            width: 1000px;
-        }
-    }
-
-    .heroThumbnail {
-        display: none;
     }
 
     .navMenu {
         display: none;
     }
 
-    #heroArea {
-        flex-direction: column;
-    }
-
-    .divider {
+    .heroThumbnail {
         display: none;
     }
 
+    .presentImage {
+        img {
+            width: 100%;
+        }
+    }
+
+    .mobileThumbnail {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        img {
+            width: 25%;
+        }
+    }
+
+    .socialMedia {
+        flex-direction: row;
+    }
+
+    .productRating {
+        img {
+            width: 30px;
+        }
+    }
 
     .productDescription {
-        width: auto;
-
         h1 {
-            font-size: 93px;
+            font-size: 55px;
         }
 
         p {
             font-size: 30px;
         }
 
-        .productRating {
-            img {
-                width: 30px;
-            }
-        }
-
         .priceTag {
-            font-size: 100px;
-        }
-
-        .quantity {
-            transform: scale(2);
-            margin-left: 130px;
-        }
-
-
-    }
-
-    .actionButtons {
-
-        div {
-            border-radius: 8px;
-            width: 360px;
-            height: 90px;
-            font-size: 40px;
+            font-size: 64px;
         }
     }
-
-    .productInfo {
-        img {
-            width: 40px;
-        }
-
-        font-size: 30px;
-    }
-
-    .socialMedia {
-        flex-direction: row;
-
-        img {
-            margin: 0 15px;
-            width: 60px;
-        }
-    }
-
 }
