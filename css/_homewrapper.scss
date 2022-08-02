@@ -53,7 +53,6 @@
 #heroArea {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     margin-top: 15px;
 }
 
@@ -83,6 +82,7 @@
 .divider {
     width: 265px;
 }
+
 
 .productDescription {
     display: flex;
@@ -216,12 +216,10 @@
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 
     #homeWrapper {
-        background: linear-gradient(to right,
-                #EBEFF7 0%,
-                #EBEFF7 100%);
+        background: #EBEFF7;
     }
 
     #heroArea {

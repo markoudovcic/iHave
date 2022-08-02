@@ -42,7 +42,6 @@
 #heroArea {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   margin-top: 15px;
 }
 
@@ -186,9 +185,9 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   #homeWrapper {
-    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
+    background: #EBEFF7;
   }
   #heroArea {
     justify-content: center;
@@ -247,7 +246,7 @@
   justify-content: center;
 }
 .specsDescription .specsHeading {
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -258,7 +257,7 @@
   font-size: 28px;
 }
 .specsDescription #line {
-  width: 100%;
+  width: 50%;
   background-color: var(--paragraph-color);
   height: 1px;
   position: relative;
@@ -266,7 +265,7 @@
 }
 .specsDescription #line div {
   height: 5px;
-  width: 20%;
+  width: 10%;
   top: -2.5px;
   position: absolute;
   background-color: var(--accent-color);
@@ -277,11 +276,11 @@
   font-size: 18px;
   margin-top: 40px;
   text-align: justify;
+  width: 50%;
 }
 
 @media screen and (max-width: 767px) {
   #specs {
-    background: #3cbbd3;
     justify-content: center;
   }
   .specsDescription {
@@ -293,14 +292,6 @@
     font-size: 60px;
   }
   .specsDescription p {
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 480px) {
-  #specs {
-    background: #5daed9;
-  }
-  .specsDescription div h1 {
     font-size: 28px;
   }
 }
@@ -361,7 +352,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px;
 }
 .card .productTitle {
   font-family: Oswald, sans-serif;
