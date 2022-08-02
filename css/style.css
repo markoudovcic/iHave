@@ -358,15 +358,6 @@
   margin: 40px 0;
 }
 
-.motImage {
-  display: none;
-  width: 100%;
-  background: url("..img/Mask Group 13@2x.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @media screen and (max-width: 767px) {
   #motivation {
     background: #e4e4d0;
@@ -385,9 +376,6 @@
   }
   .motContainer p {
     font-size: 28;
-  }
-  img {
-    display: block;
   }
 }
 #products {
