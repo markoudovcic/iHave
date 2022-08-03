@@ -721,7 +721,7 @@
   }
 }
 footer {
-  display: none;
+  display: flex;
   background-color: var(--secondary-color);
 }
 footer h1 {
@@ -742,8 +742,9 @@ footer p {
 .footerAlign {
   display: flex;
   align-items: flex-start;
-  padding-top: 132px !important;
-  padding-bottom: 128px !important;
+  flex-wrap: wrap;
+  padding-top: 132px;
+  padding-bottom: 128px;
 }
 
 .footerColumn:nth-child(1) {
