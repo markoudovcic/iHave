@@ -215,18 +215,44 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
 
-    #homeWrapper {
-        background: linear-gradient(to right,
-                #EBEFF7 0%,
-                #EBEFF7 100%,
-            );
+
+    #heroArea {
+        flex-direction: column;
     }
 
-    .navMenu {
+    .heroImage {
+        width: 90%;
+    }
+
+    .heroThumbnail {
         display: none;
+
+        img {
+            width: 25%;
+            height: auto;
+        }
     }
+
+    .mobileThumbnail {
+        display: flex;
+
+
+    }
+
+    .productDescription {
+        width: 90%;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+
 
     #heroArea {
         flex-direction: column;
@@ -244,55 +270,6 @@
         display: flex;
 
         img {
-            width: 25%px;
-            height: auto;
-        }
-    }
-
-    .productRating {
-        img {
-            width: 30px;
-        }
-    }
-
-    .productDescription {
-        width: 90% !important;
-    }
-
-    .socialMedia {
-        flex-direction: row;
-    }
-}
-
-@media screen and (max-width: 767px) {
-
-    #homeWrapper {
-        background: linear-gradient(to right,
-                #EBEFF7 0%,
-                #EBEFF7 100%,
-            );
-    }
-
-    .navMenu {
-        display: none;
-    }
-
-    #heroArea {
-        flex-direction: column !important;
-    }
-
-    .heroImage {
-        width: 90%;
-    }
-
-    .heroThumbnail {
-        display: none !important;
-    }
-
-    .mobileThumbnail {
-        display: flex !important;
-
-        img {
             width: 25%;
             height: auto;
         }
@@ -308,28 +285,11 @@
         p {
             font-size: 24x;
         }
-    }
 
-    .productRating {
-        img {
-            width: 40px;
-        }
-    }
-
-    .price {
-
-        .priceTag {
-            font-size: 38px !important;
-        }
-
-        .quantity {
-            height: 70px;
-            width: 180px;
-        }
     }
 
     .actionButtons {
-        justify-content: space-around;
+
         margin: 40px 0;
 
         div {
@@ -359,8 +319,62 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
+
+    #homeWrapper {
+        background: linear-gradient(to right,
+                #EBEFF7 0%,
+                #EBEFF7 100%,
+            );
+    }
+
+    .mobileThumbnail {
+        img {
+            width: 25%;
+            height: auto;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
     .navMenu {
+        display: none;
+    }
+
+
+    .priceTag {
+        font-size: 80px !important;
+    }
+
+    .quantity {
+
+        height: 85px;
+        width: 230px;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #heroWrapper {
+        background: linear-gradient(to right,
+                #DFE3EB 0%,
+                #DFE3EB 27%,
+                #EBEFF7 27%,
+                #EBEFF7 100%,
+            ) !important;
+    }
+
+    .navMenu {
+
         a {
             font-size: 14px;
         }
@@ -400,9 +414,12 @@
         }
     }
 
-    .priceTag {
-        font-size: 45px !important;
+    .price {
+        .priceTag {
+            font-size: 49px;
+        }
     }
+
 
     .actionButtons {
         div {
@@ -420,9 +437,28 @@
             height: 40px;
         }
     }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+    .mobileThumbnail {
+        display: none;
+    }
+
+    .heroThumbnail {
+        display: flex;
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .heroImage {
+        width: 480px;
+    }
+
     .productDescription {
         width: 420px;
 
@@ -442,8 +478,35 @@
     }
 }
 
+@media screen and (max-width: 1023px) {
+    #homeWrapper {
+        background: linear-gradient(to right,
+                #EBEFF7 0%,
+                #EBEFF7 100%,
+            );
+    }
+
+
+    .productRating {
+        img {
+            width: 40px;
+        }
+    }
+
+}
+
 @media screen and (min-width: 1366px) {
+
     .heroHeading {
-        font-size: 50px !important;
+        font-size: 50px;
+    }
+
+    .productDescription {
+        width: 524px;
+        margin-right: auto;
+
+        p {
+            font-size: 20px;
+        }
     }
 }

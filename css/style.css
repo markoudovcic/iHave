@@ -185,13 +185,31 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-  #homeWrapper {
-    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
+@media screen and (min-width: 480px) {
+  #heroArea {
+    flex-direction: column;
   }
-  .navMenu {
+  .heroImage {
+    width: 90%;
+  }
+  .heroThumbnail {
     display: none;
   }
+  .heroThumbnail img {
+    width: 25%;
+    height: auto;
+  }
+  .mobileThumbnail {
+    display: flex;
+  }
+  .productDescription {
+    width: 90%;
+  }
+  .socialMedia {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 767px) {
   #heroArea {
     flex-direction: column;
   }
@@ -203,39 +221,6 @@
   }
   .mobileThumbnail {
     display: flex;
-  }
-  .mobileThumbnail img {
-    width: 25% px;
-    height: auto;
-  }
-  .productRating img {
-    width: 30px;
-  }
-  .productDescription {
-    width: 90% !important;
-  }
-  .socialMedia {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 767px) {
-  #homeWrapper {
-    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
-  }
-  .navMenu {
-    display: none;
-  }
-  #heroArea {
-    flex-direction: column !important;
-  }
-  .heroImage {
-    width: 90%;
-  }
-  .heroThumbnail {
-    display: none !important;
-  }
-  .mobileThumbnail {
-    display: flex !important;
   }
   .mobileThumbnail img {
     width: 25%;
@@ -250,18 +235,7 @@
   .productDescription p {
     font-size: 24x;
   }
-  .productRating img {
-    width: 40px;
-  }
-  .price .priceTag {
-    font-size: 38px !important;
-  }
-  .price .quantity {
-    height: 70px;
-    width: 180px;
-  }
   .actionButtons {
-    justify-content: space-around;
     margin: 40px 0;
   }
   .actionButtons div {
@@ -284,7 +258,37 @@
     margin: 0 60px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
+  #homeWrapper {
+    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
+  }
+  .mobileThumbnail img {
+    width: 25%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .navMenu {
+    display: none;
+  }
+  .priceTag {
+    font-size: 80px !important;
+  }
+  .quantity {
+    height: 85px;
+    width: 230px;
+  }
+  .quantity h2 {
+    font-size: 40px;
+  }
+  .quantity h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #heroWrapper {
+    background: linear-gradient(to right, #DFE3EB 0%, #DFE3EB 27%, #EBEFF7 27%, #EBEFF7 100%) !important;
+  }
   .navMenu a {
     font-size: 14px;
   }
@@ -313,8 +317,8 @@
   .productDescription p {
     font-size: 16px;
   }
-  .priceTag {
-    font-size: 45px !important;
+  .price .priceTag {
+    font-size: 49px;
   }
   .actionButtons div {
     font-size: 22px;
@@ -330,6 +334,19 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .mobileThumbnail {
+    display: none;
+  }
+  .heroThumbnail {
+    display: flex;
+  }
+  .heroThumbnail img {
+    width: 120px;
+    height: 120px;
+  }
+  .heroImage {
+    width: 480px;
+  }
   .productDescription {
     width: 420px;
   }
@@ -343,9 +360,24 @@
     font-size: 24px;
   }
 }
+@media screen and (max-width: 1023px) {
+  #homeWrapper {
+    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
+  }
+  .productRating img {
+    width: 40px;
+  }
+}
 @media screen and (min-width: 1366px) {
   .heroHeading {
-    font-size: 50px !important;
+    font-size: 50px;
+  }
+  .productDescription {
+    width: 524px;
+    margin-right: auto;
+  }
+  .productDescription p {
+    font-size: 20px;
   }
 }
 #specs {
@@ -356,6 +388,10 @@
   height: 885px;
   display: flex;
   align-items: center;
+}
+
+.alignSpecs {
+  display: flex;
 }
 
 .specsDescription {
@@ -397,9 +433,23 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1023px) {
   #specs {
     background: #41c1d4;
+    height: 580px;
+  }
+  .specsDescription {
+    width: 100%;
+  }
+  .alignSpecs {
+    justify-content: center;
+    align-items: center;
+  }
+  .specsHeading {
+    width: 80%;
+  }
+  #line {
+    width: 80%;
   }
 }
 #motivation {
