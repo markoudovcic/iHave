@@ -30,15 +30,15 @@
 
 @media screen and (min-width: 480px) {
     .container {
-        width: 470px;
-        padding-left: 5px;
-        padding-right: 5px;
+        width: 460px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
 @media screen and (min-width: 767px) {
     .container {
-        width: 760px;
+        width: 740px;
     }
 
 }
@@ -50,7 +50,11 @@
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+}
 
 @media screen and(min-width: 1366px) {
     .container {
@@ -60,6 +64,6 @@
 
 @media screen and (min-width: 1920px) {
     .container {
-        width: 1366px;
+        width: 1636px;
     }
 }

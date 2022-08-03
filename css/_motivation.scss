@@ -1,18 +1,29 @@
 #motivation {
+
     background: url(../img/Mask\ Group\ 13@2x.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 920px;
-    display: flex;
+    display: none; //PROMJENI NA FLEX
     flex-direction: row-reverse;
+    align-items: center;
 
     .motContainer {
-        width: 578px;
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
 
-    h1 {
+    .aligner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .motHeading {
         font-family: Oswald, sans-serif;
         font-size: 50px;
     }

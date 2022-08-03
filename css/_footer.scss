@@ -1,9 +1,6 @@
 footer {
+    display: none; //OBRISI OVO
     background-color: var(--secondary-color);
-    display: flex;
-    align-items: flex-start;
-    padding-top: 132px !important;
-    padding-bottom: 128px !important;
 
     h1 {
         font-family: Roboto, sans-serif;
@@ -21,6 +18,13 @@ footer {
         padding-bottom: 16px;
     }
 
+}
+
+.footerAlign {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 132px !important;
+    padding-bottom: 128px !important;
 }
 
 .footerColumn:nth-child(1) {
@@ -78,7 +82,7 @@ footer {
     font-size: 18px;
     color: var(--paragraph-color);
     height: 102px;
-    display: flex;
+    display: none; //PROMJENI NA FLEX
     justify-content: flex-start;
     align-items: center;
 }
