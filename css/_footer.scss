@@ -1,5 +1,5 @@
 footer {
-    display: none; //OBRISI OVO
+    display: none;
     background-color: var(--secondary-color);
 
     h1 {
@@ -82,7 +82,7 @@ footer {
     font-size: 18px;
     color: var(--paragraph-color);
     height: 102px;
-    display: none; //PROMJENI NA FLEX
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
