@@ -4,10 +4,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 920px;
-    display: none; //PROMJENI NA FLEX
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding: 249px 0;
+
+
 
     .motContainer {
         width: 560px;
@@ -33,5 +35,47 @@
         color: var(--paragraph-color);
         font-size: 18px;
         margin: 40px 0;
+        text-justify: justify;
     }
+}
+
+.motImage {
+    background: url('../img/Mask\ Group\ 13@2x.png');
+    background-size: cover;
+    background-position: center;
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 1023px) {
+    #motivation {
+        background: url('../img/Mask\ Group\ 14@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .motContainer {
+            width: 100%;
+        }
+
+        .aligner {
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 26px;
+            font-weight: 400;
+        }
+
+        .actionButtons {
+            justify-content: center;
+        }
+
+        .motHeading {
+            color: white;
+        }
+
+    }
+
 }

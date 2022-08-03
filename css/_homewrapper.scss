@@ -342,6 +342,18 @@
         display: none;
     }
 
+    #navBar {
+        .logo {
+            width: 250px;
+        }
+    }
+
+    .navButtons {
+        img {
+            width: 48px;
+            margin: 0 10px;
+        }
+    }
 
     .priceTag {
         font-size: 80px !important;
@@ -358,6 +370,14 @@
 
         h3 {
             font-size: 30px;
+        }
+    }
+
+    .productInfo {
+        font-size: 30px;
+
+        img {
+            width: 30px;
         }
     }
 }
