@@ -453,7 +453,9 @@
 }
 @media screen and (max-width: 1023px) {
   #specs {
-    background: #58d6e9;
+    background: url("../img/Mask Group 15@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 200px 0;
   }
   .specsDescription {
@@ -526,6 +528,7 @@
     background: url("../img/Mask Group 14@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: 20%;
   }
   #motivation .motContainer {
     width: 100%;
@@ -560,7 +563,7 @@
 #products p {
   font-family: Roboto, sans-serif;
   font-size: 18px;
-  width: 30%;
+  width: 60%;
   text-align: center;
   color: var(--paragraph-color);
   margin-top: 30px;
