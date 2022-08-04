@@ -87,3 +87,19 @@ footer {
     justify-content: flex-start;
     align-items: center;
 }
+
+@media screen and (max-width: 1919px) {
+    .footerColumn {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footerColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}

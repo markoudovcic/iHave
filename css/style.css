@@ -185,9 +185,19 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 360px) {
   #heroArea {
     flex-direction: column;
+  }
+  #navBar .logo {
+    width: 40%;
+  }
+  .navMenu {
+    display: none;
+  }
+  .navButtons img {
+    width: 12%;
+    margin: 0 5px;
   }
   .heroImage {
     width: 90%;
@@ -212,6 +222,12 @@
 @media screen and (min-width: 767px) {
   #heroArea {
     flex-direction: column;
+  }
+  #navBar .logo {
+    width: 250px;
+  }
+  .navButtons img {
+    width: 40px;
   }
   .heroImage {
     width: 90%;
@@ -268,16 +284,6 @@
   }
 }
 @media screen and (max-width: 1023px) {
-  .navMenu {
-    display: none;
-  }
-  #navBar .logo {
-    width: 250px;
-  }
-  .navButtons img {
-    width: 48px;
-    margin: 0 10px;
-  }
   .priceTag {
     font-size: 80px !important;
   }
@@ -301,6 +307,15 @@
 @media screen and (min-width: 1024px) {
   #heroWrapper {
     background: linear-gradient(to right, #DFE3EB 0%, #DFE3EB 27%, #EBEFF7 27%, #EBEFF7 100%) !important;
+  }
+  #navBar .logo {
+    width: 198px;
+  }
+  .navButtons img {
+    width: 24px;
+  }
+  .navMenu {
+    display: flex;
   }
   .navMenu a {
     font-size: 14px;
@@ -469,7 +484,7 @@
     align-items: center;
   }
   .specsHeading .specsText {
-    font-size: 34px !important;
+    font-size: 34px;
     color: white;
   }
   #line {
@@ -590,6 +605,7 @@
   font-family: Oswald, sans-serif;
   font-size: 36px;
   font-weight: 500;
+  text-align: center;
 }
 .card .productPrice {
   font-family: Oswald, sans-serif;
@@ -612,9 +628,8 @@
   padding-top: 128px;
   padding-bottom: 128px;
 }
-#inputForm h1 {
+#inputForm .formText {
   font-family: Oswald, sans-serif;
-  width: 500px;
   font-size: 50px;
   text-align: center;
   margin-bottom: 70px;
@@ -625,12 +640,12 @@
   align-items: center;
 }
 .formArea .formImage {
-  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
 .formArea .formImage img {
-  width: 670px;
+  max-width: 670px;
+  width: 100%;
 }
 .formArea form {
   display: flex;
@@ -802,6 +817,20 @@ footer p {
   align-items: center;
 }
 
+@media screen and (max-width: 1919px) {
+  .footerColumn {
+    margin: 0;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
 :root {
   --accent-color: #FF9300;
   --primary-color: #DFE3EB;
@@ -822,9 +851,9 @@ footer p {
   padding-right: 142px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 360px) {
   .container {
-    width: 460px;
+    width: calc(100vw - 40px);
     padding-left: 10px;
     padding-right: 10px;
   }
