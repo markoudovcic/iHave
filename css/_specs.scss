@@ -1,8 +1,5 @@
 #specs {
-    background: url(../img/Mask\ Group\ 7@2x.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
     display: flex;
     align-items: center;
     padding: 269px 0;
@@ -62,22 +59,15 @@
 
 @media screen and (min-width: 360px) {
 
-    #specs {}
-
-}
-
-@media screen and (max-width: 765px) {
     .specsText {
         font-size: 30px;
     }
-}
 
-@media screen and (max-width: 1023px) {
     #specs {
         background: url('../img/Mask\ Group\ 15@2x.png');
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 200px 0;
     }
 
     .specsDescription {
@@ -106,8 +96,30 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    #specs {
+        background: url(../img/Mask\ Group\ 7@2x.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .alignSpecs {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     .specsDescription {
-        width: 440px;
+        width: 606px;
         margin-left: 60px;
+
+        .specsText {
+            color: var(--heading-color);
+        }
+    }
+
+    .p {
+        font-size: 30px;
     }
 }

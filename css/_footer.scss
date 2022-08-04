@@ -88,14 +88,8 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width: 1919px) {
-    .footerColumn {
-        margin: 0;
-        width: 50%;
-    }
-}
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
     .footerColumn {
         display: flex;
         flex-direction: column;

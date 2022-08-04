@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@400;500;700&display=swap");
 #homeWrapper {
   padding: 50px 0;
-  background: linear-gradient(to right, #DFE3EB 0%, #DFE3EB 27%, #EBEFF7 27%, #EBEFF7 100%);
 }
 
 .mobileThumbnail {
@@ -103,7 +102,6 @@
   color: var(--accent-color);
   font-family: Oswald, sans-serif;
   font-weight: 300;
-  font-size: 50px;
 }
 
 .quantity {
@@ -186,6 +184,9 @@
 }
 
 @media screen and (min-width: 360px) {
+  #homeWrapper {
+    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
+  }
   #heroArea {
     flex-direction: column;
   }
@@ -205,15 +206,37 @@
   .heroThumbnail {
     display: none;
   }
-  .heroThumbnail img {
+  .mobileThumbnail img {
     width: 25%;
     height: auto;
   }
   .mobileThumbnail {
     display: flex;
   }
+  .productRating img {
+    width: 40px;
+  }
+  .priceTag {
+    font-size: 80px;
+  }
   .productDescription {
     width: 90%;
+  }
+  .quantity {
+    height: 85px;
+    width: 230px;
+  }
+  .quantity h2 {
+    font-size: 40px;
+  }
+  .quantity h3 {
+    font-size: 30px;
+  }
+  .productInfo {
+    font-size: 30px;
+  }
+  .productInfo img {
+    width: 30px;
   }
   .socialMedia {
     flex-direction: row;
@@ -274,39 +297,9 @@
     margin: 0 60px;
   }
 }
-@media screen and (max-width: 767px) {
-  #homeWrapper {
-    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
-  }
-  .mobileThumbnail img {
-    width: 25%;
-    height: auto;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .priceTag {
-    font-size: 80px !important;
-  }
-  .quantity {
-    height: 85px;
-    width: 230px;
-  }
-  .quantity h2 {
-    font-size: 40px;
-  }
-  .quantity h3 {
-    font-size: 30px;
-  }
-  .productInfo {
-    font-size: 30px;
-  }
-  .productInfo img {
-    width: 30px;
-  }
-}
 @media screen and (min-width: 1024px) {
-  #heroWrapper {
-    background: linear-gradient(to right, #DFE3EB 0%, #DFE3EB 27%, #EBEFF7 27%, #EBEFF7 100%) !important;
+  #homeWrapper {
+    background: linear-gradient(to right, #DFE3EB 0%, #DFE3EB 27%, #EBEFF7 27%, #EBEFF7 100%);
   }
   #navBar .logo {
     width: 198px;
@@ -336,6 +329,9 @@
   .heroImage {
     width: 384px;
   }
+  .productRating img {
+    width: 16px;
+  }
   .productDescription {
     width: 350px;
   }
@@ -347,6 +343,16 @@
   }
   .price .priceTag {
     font-size: 49px;
+  }
+  .quantity {
+    height: 50px;
+    width: 133px;
+  }
+  .quantity h2 {
+    font-size: 28px;
+  }
+  .quantity h3 {
+    font-size: 24px;
   }
   .actionButtons div {
     font-size: 22px;
@@ -388,14 +394,6 @@
     font-size: 24px;
   }
 }
-@media screen and (max-width: 1023px) {
-  #homeWrapper {
-    background: linear-gradient(to right, #EBEFF7 0%, #EBEFF7 100%);
-  }
-  .productRating img {
-    width: 40px;
-  }
-}
 @media screen and (min-width: 1366px) {
   .heroHeading {
     font-size: 50px;
@@ -409,10 +407,6 @@
   }
 }
 #specs {
-  background: url(../img/Mask\ Group\ 7@2x.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   padding: 269px 0;
@@ -461,17 +455,15 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (min-width: 360px) {
   .specsText {
     font-size: 30px;
   }
-}
-@media screen and (max-width: 1023px) {
   #specs {
     background: url("../img/Mask Group 15@2x.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 0;
   }
   .specsDescription {
     width: 100%;
@@ -492,9 +484,25 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  #specs {
+    background: url(../img/Mask\ Group\ 7@2x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .alignSpecs {
+    justify-content: flex-start;
+    align-items: center;
+  }
   .specsDescription {
-    width: 440px;
+    width: 606px;
     margin-left: 60px;
+  }
+  .specsDescription .specsText {
+    color: var(--heading-color);
+  }
+  .p {
+    font-size: 30px;
   }
 }
 #motivation {
@@ -817,13 +825,7 @@ footer p {
   align-items: center;
 }
 
-@media screen and (max-width: 1919px) {
-  .footerColumn {
-    margin: 0;
-    width: 50%;
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
   .footerColumn {
     display: flex;
     flex-direction: column;
