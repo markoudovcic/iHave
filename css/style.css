@@ -21,7 +21,6 @@
 .navMenu a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  text-decoration: none;
   color: var(--paragraph-color);
   padding: 0 24px;
   font-size: 18px;
@@ -30,12 +29,9 @@
   color: #969696;
 }
 
-.navButtons img {
+.navButtons a img {
   width: 22px;
   padding: 10px;
-}
-.navButtons img:hover {
-  cursor: pointer;
 }
 
 #heroArea {
@@ -132,7 +128,7 @@
   width: 100%;
   margin-bottom: 30px;
 }
-.actionButtons div {
+.actionButtons .actionLink div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,12 +143,11 @@
   width: 213px;
   height: 61px;
 }
-.actionButtons div:nth-child(2) {
+.actionButtons a:nth-child(2) div {
   background-color: transparent;
   color: var(--accent-color);
-  margin-left: 30px;
 }
-.actionButtons div:hover {
+.actionButtons a:hover {
   cursor: pointer;
 }
 
@@ -232,6 +227,13 @@
   .quantity h3 {
     font-size: 30px;
   }
+  .actionButtons {
+    flex-direction: column;
+  }
+  .actionButtons .actionLink div {
+    width: 100%;
+    margin-top: 30px;
+  }
   .productInfo {
     font-size: 30px;
   }
@@ -275,12 +277,19 @@
     font-size: 24x;
   }
   .actionButtons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .actionButtons .actionLink {
     margin: 40px 0;
   }
-  .actionButtons div {
-    width: 252px;
+  .actionButtons .actionLink div {
+    width: 336px;
     height: 68px;
     font-size: 28px;
+  }
+  .actionButtons .actionLink div:nth-child(2) {
+    margin-left: 30px;
   }
   .productInfo {
     font-size: 22px;
@@ -354,7 +363,11 @@
   .quantity h3 {
     font-size: 24px;
   }
-  .actionButtons div {
+  .actionButtons .actionLink {
+    width: 300px;
+  }
+  .actionButtons .actionLink div {
+    width: 154px;
     font-size: 22px;
   }
   .socialMedia {
@@ -390,7 +403,8 @@
   .productDescription p {
     font-size: 14px;
   }
-  .actionButtons div {
+  .actionButtons .actionLink div {
+    width: 188px;
     font-size: 24px;
   }
 }
@@ -404,6 +418,11 @@
   }
   .productDescription p {
     font-size: 20px;
+  }
+  .actionButtons .actionLink div {
+    width: 214px;
+    height: 61px;
+    font-size: 24px;
   }
 }
 #specs {
@@ -564,9 +583,6 @@
   #motivation p {
     font-size: 26px;
     font-weight: 400;
-  }
-  #motivation .actionButtons {
-    justify-content: center;
   }
   #motivation .motHeading {
     color: white;
@@ -765,8 +781,6 @@ footer p {
 .footerAlign {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
-  padding-top: 132px;
   padding-bottom: 128px;
 }
 
@@ -825,8 +839,16 @@ footer p {
   align-items: center;
 }
 
-@media screen and (min-width: 1199px) {
-  .footerColumn {
+@media screen and (min-width: 360px) {
+  .footerAlign {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footerAlign {
+    flex-wrap: nowrap;
+  }
+  .footerAlign .footerColumn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -844,6 +866,7 @@ footer p {
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .container {
