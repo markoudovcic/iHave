@@ -782,6 +782,7 @@ footer p {
   display: flex;
   align-items: flex-start;
   padding-bottom: 128px;
+  padding-top: 128px;
 }
 
 .footerColumn:nth-child(1) {
